@@ -21,13 +21,13 @@ public class GameController {
 				moveY = -Game.MOVE_DIST;
 			}
 			
-			game.setSquareDx(moveX);
-			game.setSquareDy(moveY);
+			game.setSquareDx(moveX*3);
+			game.setSquareDy(moveY*3);
 		}
 	}
 
 	public void moveSquare(Game model, Square square) {
-		square.setX(square.getX() + model.getSquareDx());
-		square.setY(square.getY() + model.getSquareDy());
+			square.setX(square.getX() + model.getSquareDx());
+			square.setY(square.getY() + model.getSquareDy());
 	}
 }
